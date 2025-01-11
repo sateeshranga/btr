@@ -1,3 +1,9 @@
+<?php
+include_once("evadmin/config.php");
+
+$q="select `Tournament_Name`, `Location`, `Limit`, `Start_Date`, `End_Date`, `Last_Date_Ent`, `Tourney_ID`, `Status` from tourney_m where `Status` = 1 and Last_Date_Ent >= '".date('Y-m-d')."' order by Tournament_Name";
+$result = $dbConn->query($q);
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 	<?php include("head.php"); ?>
@@ -21,69 +27,36 @@
                                     <table class="match-table">
                                         <tbody>
                                             <tr>
-                                                 <td class="medium-font">Nettrok FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Bramma FC</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Netro Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
+                                                <td class="big-font">Tournament</td>
+                                                <td class="medium-font">Location</td>
+                                                <td>Start Date</td>
+                                                <td>End Date</td>
+                                                <td>Last Day For Registration</td>
+                                                <td>View Events</td>
                                             </tr>
+                                            <?php 
+                                            if ($result->num_rows >= 1 ) {
+                                                while ($tournamentEach = $result->fetch_assoc()) {
+                                                    // print_r($tournamentEach);
+                                            ?>
                                             <tr>
-                                                 <td class="medium-font">Bogro FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Joypur FC</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Bramma Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
+                                                <td class="medium-font"><?php echo $tournamentEach['Tournament_Name']; ?></td>
+                                                <td class="medium-font"><?php echo $tournamentEach['Location']; ?></td>
+                                                <td class="medium-font"><?php echo date('d-m-Y', strtotime($tournamentEach['Start_Date'])); ?></td>
+                                                <td class="medium-font"><?php echo date('d-m-Y', strtotime($tournamentEach['End_Date'])); ?></td>
+                                                <td class="medium-font"><?php echo date('d-m-Y', strtotime($tournamentEach['Last_Date_Ent'])); ?></td>
+                                                <td class="medium-font"><a href="events.php?tid=<?php echo $tournamentEach['Tourney_ID']; ?>">Events</a></td>
                                             </tr>
+                                            <?php 
+                                                }
+                                            } else { 
+                                            ?>
                                             <tr>
-                                                 <td class="medium-font">Mirpur FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">men utd</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Golshan Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
+                                                <td class="medium-font" colspan="6">No data found.</td>
                                             </tr>
-                                            <tr>
-                                                 <td class="medium-font">Kapa FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Dhoar FC</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Mirpur Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
-                                            </tr>
-                                            <tr>
-                                                 <td class="medium-font">Trishal FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Banani FC</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Badda Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
-                                            </tr>
-                                            <tr>
-                                                 <td class="medium-font">Badda FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Nattrok Fc</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Mirpur Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
-                                            </tr>
-                                            <tr>
-                                                 <td class="medium-font">Bramma FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Bogro FC</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Netro Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
-                                            </tr>
-                                            <tr>
-                                                 <td class="medium-font">Joypur FC</td>
-                                                 <td class="big-font">VS</td>
-                                                 <td class="medium-font">Mirpur FC</td>
-                                                 <td>June 16, 17:00</td>
-                                                 <td>Bramma Stadium</td>
-                                                <td><a href="#">Buy a Ticket</a></td>
-                                            </tr>
+                                            <?php    
+                                            }
+                                            ?>                                                
                                         </tbody>
                                     </table>
                                 </div>
