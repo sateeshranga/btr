@@ -53,8 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- Contact Section Start -->
         <div class="contact-page-section sec-spacer">
         	<div class="container">
+            <h3 class="title-bg">Player Login</h3>
         		<div class="contact-comment-section">
-        			<h3>Player Login</h3>
+               
                     <div id="form-message"><?php
 						if (!empty($errors)) {
 							echo "<p style='color:red;'>";
@@ -77,17 +78,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 									<div class="form-group">
 										<label>Password *</label>
 										<input name="logpswd" id="logpswd" class="form-control" type="password" required>
-										<a href="forgot.php">Reset Login Details</a>
+										<a href="forgot.php" class="resetLink">Reset Login Details</a>
 									</div>
 								</div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">         
-									<div class="form-group mb-0 pull-left">
+                                <div class="col-md-12 col-sm-12 col-xs-12 align-center">         
+									<div class="form-group mb-0 pull-left width100p">
 										<input class="btn-send" type="submit" value="Login">
 									</div>
 								</div>
 							</div>
-                            <div class="col-md-6 col-sm-6 col-xs-12 rightImageContainer">
-                                <p>Image comes here</p>
+                            <div class="col-md-6 col-sm-6 col-xs-12 rightLoginImageContainer">
+                              <img src="img/table-banner.jpg"/>
                             </div>
 						</fieldset>
 					</form>						

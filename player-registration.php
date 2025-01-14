@@ -104,8 +104,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<!-- Contact Section Start -->
 		<div class="contact-page-section sec-spacer">
         	<div class="container">
+			<h3 class="title-bg">Player Registration</h3>
         		<div class="contact-comment-section">
-        			<h3>Player Registration</h3>
+        			
                     <div id="form-message"><?php
 						if (!empty($errors)) {
 							echo "<p style='color:red;'>";
@@ -201,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 								</div>
 								<div class="col-md-4 col-sm-6 col-xs-12">         
 									<div class="form-group ">
-										<input class="btn-send" type="submit" value="Register">
+										<input class="btn-send marginSpl" type="submit" value="Register">
 									</div>
 								</div>
 								<div class="col-md-12 col-sm-12 col-xs-12 pull-right">  

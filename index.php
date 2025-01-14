@@ -8,13 +8,13 @@
 			<div class="container">
                 <h3 class="title-bg">About BAT</h3>
 				<div class="row">
-					<div class="col-lg-6 col-md-12">
+					<div class="col-lg-7 col-md-12">
 						<div class="rs-club-text text-justify">
 							<p>BAT (Badminton Association of Telangana) is formed with an objective to promote the game of badminton in the state of Telangana. It executes with a body formed and elected by the members of all the districts in Telangana. </p>
-							<p>The goals of BAT include (and not restricted to) supporting all passionate players in Telangana, assisting them in all possible ways to promote the game, bring respect & dignity to the sport and to facilitate all badminton related events by forming guidelines.</p>
+							<p class="marBtm-10">The goals of BAT include (and not restricted to) supporting all passionate players in Telangana, assisting them in all possible ways to promote the game, bring respect & dignity to the sport and to facilitate all badminton related events by forming guidelines.</p>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-12">
+					<div class="col-lg-5 col-md-12">
 						<div class="rs-club-image  bord-radius-12">
 							<img src="https://gopichandacademy.com/assets/img/ban.jpg" alt="" class=" bord-radius-12">
 						</div>
@@ -115,8 +115,8 @@
                     <div class="col-lg-5">
                         <h3 class="title-bg">Important Information</h3>
                         <div class="row">
-			        		<div class="col-md-9">
-					        	<div class="latest-news-slider">
+			        		<div class="col-md-12">
+					        	<div class="latest-news-slider customLatestSlider">
 					        		<div>
 										<div class="news-normal-block">
 						                    <div class="news-img">
@@ -173,8 +173,8 @@
 					        		</div>
 					        	</div>			        			
 			        		</div>
-			        		<div class="col-md-3">			        			
-					        	<div class="latest-news-nav">
+			        		<div class="col-md-12">			        			
+					        	<div class="latest-news-nav customLatestNav">
 									<div><img src="images/latest/tb1.jpg" alt="" /></div>
 									<div><img src="images/latest/tb2.jpg" alt="" /></div>
 									<div><img src="images/latest/tb3.jpg" alt="" /></div>

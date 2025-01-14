@@ -96,7 +96,7 @@ table {
 }
 .sec-spacer {
  /*  padding: 100px 0; */
-  padding:50px 0;
+  padding:28px 0;
 }
 .mb-30 {
   margin-bottom: 30px;
@@ -547,7 +547,7 @@ ul {
   color: #111111;
   display: inline-block;
   text-transform: capitalize;
-  margin-bottom: 44px;
+  margin-bottom: 28px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   line-height: 17px;
@@ -2405,7 +2405,7 @@ body .modal-backdrop {
   margin-top: 24px;
 }
 .match-list {
-  background: url(images/match-bg.jpg);
+  background: url(img/table-banner.jpg);
   background-size: cover;
   position: relative;
   padding: 20px 0;
@@ -3411,17 +3411,17 @@ body .modal-backdrop {
 }
 .champion-section-area .rs-count .rs-counter-list h2 {
   margin: 0 auto 15px;
-  font-size: 24px;
-  width: 120px;
-  height: 120px;
+  font-size: 20px;
+  width: 80px;
+  height: 80px;
   border-top: 4px solid #fbc02d;
   border-bottom: 4px solid #ddd;
-  line-height: 120px;
+  line-height: 80px;
   text-align: center;
   border-radius: 50%;
 }
 .champion-section-area .rs-count .rs-counter-list h3 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
@@ -5085,11 +5085,12 @@ body .modal-backdrop {
 .footer-bottom {
   padding: 20px 0;
  /*  border-top: 1px solid #303030; */
- background: #c7dafe;
+ background:#192356;
   font-size: 14px;
 }
 .footer-bottom .copyright p {
   margin-bottom: 0;
+  color: #fff;
 }
 .footer-bottom .copyright a {
   color: #fbc02d;
@@ -6248,4 +6249,201 @@ marquee{
 .rightImageContainer{
   border: 1px solid #ddd;
   border-radius: 6px;
+}
+.rightLoginImageContainer img{
+width: 100%;
+border-radius: 12px;
+}
+.centerAlign{
+  align-items: center;
+}
+.club-sidebar .customClubDetails ul li{
+  width: 25%;
+}
+.marBtm-10{
+  margin-bottom: 10px;
+}
+.club-logo img{
+  border-radius: 12px;
+}
+.districtRow{
+  border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.customLatestSlider .slick-prev {
+  bottom: -41px;
+  right: 48px;
+  display: none !important;
+}
+.customLatestSlider .slick-arrow.slick-next {
+  right: -1px;
+  bottom: -41px;
+  display: none !important;
+}
+.customLatestNav .slick-track{
+  display: flex;
+  justify-content: center;
+}
+.customLatestNav .slick-slide{
+  margin: 10px 6px;
+  width: 40px !important;
+  padding: 5px;
+  border-radius: 4px;
+}
+.regiDeck{
+  display: flex;
+  flex-wrap: wrap;
+}
+.regiDeck .cards{
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  
+  min-width: calc(100% * (1/2) - 16px);
+  max-width: calc(100% * (1/2) - 16px);
+  margin: 8px;
+  position: relative;
+}
+.profPanelDetails h5{
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.profPanelDetails p{
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+.profPanelDetails{
+  margin-left: 15px;
+}
+.profImg{
+  width: 96px;
+  height: 96px;
+}
+.wrap{
+  flex-wrap: wrap;
+}
+.customYellowBtn{
+  text-transform: uppercase;
+  color: #111111;
+  background-color: #fbc02d;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 500;
+  padding: 0 50px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+}
+.customYellowBtn:hover{
+  background: #111111;
+  color: #fbc02d;
+}
+.align-center{
+  text-align: center;
+}
+.regiDeck .form-group{
+  margin-bottom:5px;
+}
+.regiDeck label{
+  margin-bottom: 3px;
+}
+.no-pad-lft-rht{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.align-right{
+  text-align: right;
+}
+.eventsDeck{
+  display: flex;
+  flex-wrap: wrap;
+}
+.twoCardsDeck {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*   min-width: calc(100% * (1/2) - 16px);
+  max-width: calc(100% * (1/2) - 16px); */
+  margin: 8px;
+  position: relative;
+}
+.pastEvents{
+  width: 40%;
+}
+.selectedEvents{
+  width: 57%;
+}
+.twoCardsDeck h4{
+  font-size: 18px;
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 6px;
+}
+.orangeBox{
+  border-bottom: 2px solid #fbc02d;
+  background: #fff9eb;
+}
+.greenBox{
+  border-bottom: 2px solid #4CAF50;
+  background: #f3fff4;
+}
+.noEventsDeck{
+  text-align: center;
+}
+.noEventsDeck p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.pastListDeck{
+  width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+.commonTableStyles thead th{
+  border-bottom: 1px solid #dee2e6;
+  font-weight: 600;
+  border-top: none;
+}
+.commonTableStyles{
+  margin-bottom: 0px;
+}
+.currentListDeck{
+  width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+.deleteIcon{
+  width: 18px;
+}
+.payableLabel{
+  background: #f7fff8;
+  font-weight: 600;
+}
+.totalAmountLabel{
+  background: #4CAF50;
+  color: #fff;
+}
+.page-spacer{
+  padding: 30px 0px;
+}
+.marTp20{
+  margin-top: 20px;
+}
+.width100p{
+  width: 100%;
+}
+.resetLink{
+  margin-top: 8px;
+  display: block;
+  color: #9f7713;
+}
+.marginSpl{
+  margin-top: 34px !important;
 }
